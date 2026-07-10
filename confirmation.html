@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Booking Confirmed</h1>
+
+    <p>Your pickup request has been successfully registered.</p>
+
+</section>
+
+<section class="confirmation-section">
+
+    <div class="confirmation-card">
+
+        <h2>Order Details</h2>
+
+        <p>
+            <strong>Order ID:</strong>
+            <span id="orderId"></span>
+        </p>
+
+        <p>
+            <strong>Service:</strong>
+            <span id="serviceName"></span>
+        </p>
+
+        <button onclick="goPayment()">
+            Proceed to Payment
+        </button>
+
+        <button onclick="trackOrder()">
+            Track Order
+        </button>
+
+        <button onclick="downloadInvoice()">
+            Download Invoice
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Merciya QuickWash Services
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("orderId").innerHTML =
+localStorage.getItem("orderId");
+
+document.getElementById("serviceName").innerHTML =
+localStorage.getItem("serviceName");
+
+</script>
+
+</body>
+</html>

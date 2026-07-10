@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Pickup - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Book Laundry Pickup</h1>
+
+    <p>
+        Schedule your laundry pickup in a few simple steps
+    </p>
+
+</section>
+
+<section class="booking-section">
+
+    <div class="booking-card">
+
+        <h2>Pickup Details</h2>
+
+        <form id="bookingForm">
+
+            <label>Customer Name</label>
+            <input type="text"
+                   id="customerName"
+                   placeholder="Enter your name">
+
+            <label>Mobile Number</label>
+            <input type="text"
+                   id="mobile"
+                   placeholder="Enter mobile number">
+
+            <label>Service Type</label>
+            <select id="service">
+
+                <option>Select Service</option>
+
+                <option>Wash & Fold</option>
+
+                <option>Wash & Iron</option>
+
+                <option>Dry Cleaning</option>
+
+                <option>Premium Laundry</option>
+
+                <option>Shoe Cleaning</option>
+
+                <option>Blanket Cleaning</option>
+
+            </select>
+
+            <label>Pickup Address</label>
+            <textarea id="address"
+                      placeholder="Enter pickup address"></textarea>
+
+            <label>Pickup Date</label>
+            <input type="date" id="pickupDate">
+
+            <label>Pickup Time</label>
+            <input type="time" id="pickupTime">
+
+            <button type="button"
+                    onclick="confirmBooking()">
+
+                Confirm Booking
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Merciya QuickWash Services</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+window.onload = function()
+{
+    var service =
+    localStorage.getItem(
+    "selectedService");
+
+    if(service)
+    {
+        document
+        .getElementById("service")
+        .value = service;
+    }
+}
+
+</script>
+
+</body>
+</html>

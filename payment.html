@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Payment</h1>
+
+    <p>Choose your preferred payment method</p>
+
+</section>
+
+<section class="payment-section">
+
+    <div class="payment-card">
+
+        <h2>Payment Methods</h2>
+
+        <div class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                id="upi"
+                value="UPI">
+
+            <label for="upi">
+                UPI Payment
+            </label>
+
+        </div>
+
+        <div class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                id="card"
+                value="Card">
+
+            <label for="card">
+                Credit / Debit Card
+            </label>
+
+        </div>
+
+        <div class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                id="cod"
+                value="Cash On Delivery">
+
+            <label for="cod">
+                Cash On Delivery
+            </label>
+
+        </div>
+
+        <div id="paymentDetails">
+
+            <input
+                type="text"
+                id="paymentInput"
+                placeholder="Enter UPI ID or Card Number">
+
+        </div>
+
+        <button onclick="payNow()">
+            Pay Now
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Payment Success Popup -->
+
+<div
+    id="successBox"
+    class="success-box">
+
+    <h2>Payment Successful</h2>
+
+    <p>
+        Your payment has been completed successfully.
+    </p>
+
+    <button onclick="goOrders()">
+        View Orders
+    </button>
+
+</div>
+
+<footer>
+
+    © 2026 Merciya QuickWash Services
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

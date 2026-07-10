@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash Admin</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="orders.html">Orders</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Admin Dashboard</h1>
+
+    <p>Manage customers, orders and revenue</p>
+
+</section>
+
+<section class="dashboard-section">
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+            <h3>Total Orders</h3>
+            <h2>25</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Revenue</h3>
+            <h2>₹15,000</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Pending Orders</h3>
+            <h2>5</h2>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Delivered Orders</h3>
+            <h2>20</h2>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="customer-section">
+
+    <div class="customer-card">
+
+        <h2>Customer Search</h2>
+
+        <input
+            type="text"
+            id="customerSearch"
+            placeholder="Enter Customer Name">
+
+        <button onclick="searchCustomer()">
+            Search
+        </button>
+
+        <p id="customerResult"></p>
+
+    </div>
+
+</section>
+
+<section class="order-management">
+
+    <div class="management-card">
+
+        <h2>Order Management</h2>
+
+        <table>
+
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Service</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td id="adminOrderId"></td>
+                <td id="adminCustomer"></td>
+                <td id="adminService"></td>
+                <td id="adminStatus"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Merciya QuickWash Admin Dashboard
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("adminOrderId").innerHTML =
+localStorage.getItem("orderId") || "OR10001";
+
+document.getElementById("adminCustomer").innerHTML =
+localStorage.getItem("customerName") || "Customer";
+
+document.getElementById("adminService").innerHTML =
+localStorage.getItem("serviceName") || "Wash & Fold";
+
+document.getElementById("adminStatus").innerHTML =
+localStorage.getItem("orderStatus") || "Pickup Scheduled";
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Track Order - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Track Your Order</h1>
+
+    <p>
+        Check the current status of your laundry service
+    </p>
+
+</section>
+
+<section class="tracking-section">
+
+    <div class="tracking-card">
+
+        <h2>
+            Order ID:
+            <span id="trackOrderId"></span>
+        </h2>
+
+        <div class="timeline">
+
+            <div class="step completed">
+                Pickup Scheduled
+            </div>
+
+            <div class="step completed">
+                Washing
+            </div>
+
+            <div class="step active">
+                Ironing
+            </div>
+
+            <div class="step">
+                Out for Delivery
+            </div>
+
+            <div class="step">
+                Delivered
+            </div>
+
+        </div>
+
+        <button onclick="goFeedback()">
+            Give Feedback
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Merciya QuickWash Services</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+document.getElementById("trackOrderId").innerHTML =
+localStorage.getItem("orderId");
+</script>
+
+</body>
+</html>

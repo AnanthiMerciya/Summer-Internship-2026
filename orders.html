@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Orders - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>My Orders</h1>
+
+    <p>
+        View your booked laundry services
+    </p>
+
+</section>
+
+<section class="orders-section">
+
+    <div class="order-card">
+
+        <h2>Order Details</h2>
+
+        <p>
+            <strong>Order ID:</strong>
+            <span id="orderId"></span>
+        </p>
+
+        <p>
+            <strong>Customer Name:</strong>
+            <span id="customerName"></span>
+        </p>
+
+        <p>
+            <strong>Service:</strong>
+            <span id="serviceName"></span>
+        </p>
+
+        <p>
+            <strong>Pickup Date:</strong>
+            <span id="pickupDate"></span>
+        </p>
+
+        <p>
+            <strong>Pickup Time:</strong>
+            <span id="pickupTime"></span>
+        </p>
+
+        <p>
+            <strong>Status:</strong>
+            <span class="status">
+                Pickup Scheduled
+            </span>
+        </p>
+
+        <button onclick="trackOrder()">
+            Track Order
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Merciya QuickWash Services</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("orderId").innerHTML =
+localStorage.getItem("orderId");
+
+document.getElementById("customerName").innerHTML =
+localStorage.getItem("customerName");
+
+document.getElementById("serviceName").innerHTML =
+localStorage.getItem("serviceName");
+
+document.getElementById("pickupDate").innerHTML =
+localStorage.getItem("pickupDate");
+
+document.getElementById("pickupTime").innerHTML =
+localStorage.getItem("pickupTime");
+
+</script>
+
+</body>
+</html>

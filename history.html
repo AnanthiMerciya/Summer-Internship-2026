@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order History - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Order History</h1>
+
+    <p>View and search your previous orders</p>
+
+</section>
+
+<section class="history-section">
+
+    <div class="history-card">
+
+        <h2>Search Order</h2>
+
+        <input
+            type="text"
+            id="searchOrder"
+            placeholder="Enter Order ID">
+
+        <button onclick="searchOrder()">
+            Search
+        </button>
+
+        <p id="searchResult"></p>
+
+        <hr>
+
+        <h2>Order History</h2>
+
+        <table>
+
+            <tr>
+                <th>Order ID</th>
+                <th>Service</th>
+                <th>Payment</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td id="historyId"></td>
+                <td id="historyService"></td>
+                <td id="historyPayment"></td>
+                <td id="historyStatus"></td>
+            </tr>
+
+        </table>
+
+        <button onclick="viewOrderDetails()">
+            View Details
+        </button>
+
+        <button onclick="goProfile()">
+            Back to Profile
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Merciya QuickWash Services
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("historyId").innerHTML =
+localStorage.getItem("orderId") || "-";
+
+document.getElementById("historyService").innerHTML =
+localStorage.getItem("serviceName") || "-";
+
+document.getElementById("historyPayment").innerHTML =
+localStorage.getItem("paymentStatus") || "Pending";
+
+document.getElementById("historyStatus").innerHTML =
+localStorage.getItem("orderStatus") || "Pickup Scheduled";
+
+</script>
+
+</body>
+</html>

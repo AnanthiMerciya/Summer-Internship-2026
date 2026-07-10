@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>Customer Feedback</h1>
+
+    <p>
+        Your feedback helps us improve our service.
+    </p>
+
+</section>
+
+<section class="feedback-section">
+
+    <div class="feedback-card">
+
+        <h2>Rate Our Service</h2>
+
+        <div class="rating">
+
+            <input type="radio" name="rating" value="5"> 5 Star<br><br>
+
+            <input type="radio" name="rating" value="4"> 4 Star<br><br>
+
+            <input type="radio" name="rating" value="3"> 3 Star<br><br>
+
+            <input type="radio" name="rating" value="2"> 2 Star<br><br>
+
+            <input type="radio" name="rating" value="1"> 1 Star
+
+        </div>
+
+        <br>
+
+        <textarea
+            id="feedbackText"
+            placeholder="Enter your feedback here">
+        </textarea>
+
+        <br><br>
+
+        <button onclick="submitFeedback()">
+            Submit Feedback
+        </button>
+
+        <div id="thankYouMessage"></div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Merciya QuickWash Services</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

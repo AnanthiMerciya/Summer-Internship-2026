@@ -1,0 +1,1000 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#F5F9FF;
+    color:#333;
+    min-height:100vh;
+}
+
+a{
+    text-decoration:none;
+}
+
+header{
+    background:#1E3A8A;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h2{
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#14B8A6;
+}
+
+footer{
+    background:#1E3A8A;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+.page-banner{
+    background:#DBEAFE;
+    text-align:center;
+    padding:50px;
+}
+
+.page-banner h1{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.page-banner p{
+    color:#555;
+}
+
+button{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.login-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-card{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.login-card h1{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.login-card button{
+    width:100%;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.register-text{
+    margin-top:15px;
+}
+
+.register-text a{
+    color:#1E3A8A;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(
+        135deg,
+        #DBEAFE,
+        #F0F9FF
+    );
+}
+
+.hero h1{
+    font-size:50px;
+    color:#1E3A8A;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+    color:#555;
+}
+
+.hero button{
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:8px;
+    font-size:16px;
+}
+
+#about{
+    padding:60px 30px;
+    text-align:center;
+}
+
+#about h2{
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+#services{
+    padding:60px 30px;
+}
+
+#services h2{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:30px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+#contact{
+    text-align:center;
+    padding:60px 30px;
+}
+
+#contact h2{
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+#contact p{
+    margin:10px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+@media(max-width:768px)
+{
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .login-card{
+        width:90%;
+    }
+
+    .card{
+        width:90%;
+    }
+}
+
+.service-box
+{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card
+{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3
+{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.price
+{
+    font-size:24px;
+    color:#14B8A6;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+.card p
+{
+    color:#666;
+    line-height:1.6;
+}
+
+.card button
+{
+    margin-top:15px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    width:100%;
+}
+
+.card button:hover
+{
+    background:#0F9E91;
+}
+
+.booking-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.booking-card
+{
+    width:650px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.booking-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.booking-card label
+{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.booking-card input,
+.booking-card select,
+.booking-card textarea
+{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.booking-card textarea
+{
+    resize:none;
+    height:100px;
+}
+
+.booking-card button
+{
+    width:100%;
+    margin-top:20px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.booking-card button:hover
+{
+    background:#0F9E91;
+}
+
+.confirmation-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.confirmation-card
+{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.confirmation-card h2
+{
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.confirmation-card p
+{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.confirmation-card button
+{
+    width:100%;
+    margin-top:12px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+}
+
+.confirmation-card button:hover
+{
+    background:#0F9E91;
+}
+
+.payment-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.payment-card
+{
+    width:550px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.payment-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:25px;
+}
+
+.payment-option
+{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.payment-option label
+{
+    margin-left:10px;
+    font-weight:bold;
+}
+
+#paymentDetails
+{
+    margin-top:15px;
+}
+
+#paymentDetails input
+{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.payment-card button
+{
+    width:100%;
+    margin-top:20px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.payment-card button:hover
+{
+    background:#0F9E91;
+}
+
+.success-box
+{
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+    z-index:999;
+}
+
+.success-box h2
+{
+    color:#22C55E;
+    margin-bottom:15px;
+}
+
+.success-box p
+{
+    margin-bottom:20px;
+}
+
+.success-box button
+{
+    background:#22C55E;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+}
+
+input:focus,
+select:focus,
+textarea:focus
+{
+    outline:none;
+    border-color:#14B8A6;
+    box-shadow:0px 0px 5px rgba(20,184,166,0.4);
+}
+
+@media(max-width:768px)
+{
+    .booking-card,
+    .confirmation-card,
+    .payment-card,
+    .success-box
+    {
+        width:95%;
+    }
+}
+
+.orders-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.order-card
+{
+    width:650px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.order-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.order-card p
+{
+    margin:15px 0;
+    font-size:16px;
+}
+
+.status
+{
+    background:#FACC15;
+    color:black;
+    padding:5px 12px;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+.order-card button
+{
+    width:100%;
+    margin-top:20px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+}
+
+.tracking-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.tracking-card
+{
+    width:700px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.tracking-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:25px;
+}
+
+.timeline
+{
+    margin-top:20px;
+}
+
+.step
+{
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    background:#E5E7EB;
+    font-weight:bold;
+}
+
+.completed
+{
+    background:#22C55E;
+    color:white;
+}
+
+.active
+{
+    background:#FACC15;
+    color:black;
+}
+
+.tracking-card button
+{
+    width:100%;
+    margin-top:20px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+}
+
+.feedback-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.feedback-card
+{
+    width:550px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.feedback-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.rating
+{
+    margin-top:15px;
+}
+
+.feedback-card textarea
+{
+    width:100%;
+    height:120px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.feedback-card button
+{
+    width:100%;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+}
+
+#thankYouMessage
+{
+    margin-top:20px;
+    text-align:center;
+    color:green;
+}
+
+.profile-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.profile-card
+{
+    width:650px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-card h2
+{
+    text-align:center;
+    color:#1E3A8A;
+    margin-bottom:20px;
+}
+
+.profile-info p
+{
+    margin:15px 0;
+    font-size:16px;
+}
+
+.profile-card button
+{
+    width:100%;
+    margin-top:12px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+}
+
+.history-section
+{
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.history-card
+{
+    width:900px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.history-card input
+{
+    width:70%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.history-card button
+{
+    padding:12px 18px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    border-radius:6px;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+.history-card table
+{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.history-card th
+{
+    background:#1E3A8A;
+    color:white;
+    padding:12px;
+}
+
+.history-card td
+{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+#searchResult
+{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.dashboard-section
+{
+    padding:40px;
+}
+
+.dashboard-cards
+{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.dashboard-card
+{
+    width:220px;
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h3
+{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.dashboard-card h2
+{
+    color:#14B8A6;
+}
+
+.customer-section
+{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.customer-card
+{
+    width:800px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.customer-card input
+{
+    width:70%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.customer-card button
+{
+    padding:12px 20px;
+    background:#14B8A6;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+.order-management
+{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.management-card
+{
+    width:1000px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.management-card table
+{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.management-card th
+{
+    background:#1E3A8A;
+    color:white;
+    padding:12px;
+}
+
+.management-card td
+{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.dark-mode
+{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode header,
+.dark-mode footer
+{
+    background:#000;
+}
+
+.dark-mode .card,
+.dark-mode .booking-card,
+.dark-mode .confirmation-card,
+.dark-mode .payment-card,
+.dark-mode .order-card,
+.dark-mode .tracking-card,
+.dark-mode .feedback-card,
+.dark-mode .profile-card,
+.dark-mode .history-card,
+.dark-mode .dashboard-card,
+.dark-mode .customer-card,
+.dark-mode .management-card
+{
+    background:#1E1E1E;
+    color:white;
+}
+
+.dark-mode table td
+{
+    border-color:#444;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea
+{
+    background:#2A2A2A;
+    color:white;
+    border:1px solid #555;
+}
+
+@media(max-width:768px)
+{
+    .order-card,
+    .tracking-card,
+    .feedback-card,
+    .profile-card,
+    .history-card,
+    .customer-card,
+    .management-card
+    {
+        width:95%;
+    }
+
+    .history-card input,
+    .customer-card input
+    {
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .dashboard-card
+    {
+        width:90%;
+    }
+
+    table
+    {
+        display:block;
+        overflow-x:auto;
+    }
+}

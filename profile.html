@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile - Merciya QuickWash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h2>Merciya QuickWash</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book Pickup</a>
+        <a href="orders.html">Orders</a>
+        <a href="tracking.html">Track Order</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<section class="page-banner">
+
+    <h1>User Profile</h1>
+
+    <p>Manage your account and view order details</p>
+
+</section>
+
+<section class="profile-section">
+
+    <div class="profile-card">
+
+        <h2>Customer Information</h2>
+
+        <div class="profile-info">
+
+            <p>
+                <strong>Name:</strong>
+                <span id="profileName"></span>
+            </p>
+
+            <p>
+                <strong>Mobile:</strong>
+                <span id="profileMobile"></span>
+            </p>
+
+            <p>
+                <strong>Last Order ID:</strong>
+                <span id="profileOrderId"></span>
+            </p>
+
+            <p>
+                <strong>Service:</strong>
+                <span id="profileService"></span>
+            </p>
+
+            <p>
+                <strong>Payment Status:</strong>
+                <span id="profilePayment"></span>
+            </p>
+
+            <p>
+                <strong>Total Orders:</strong>
+                <span>1</span>
+            </p>
+
+        </div>
+
+        <button onclick="toggleDarkMode()">
+            Toggle Dark Mode
+        </button>
+
+        <button onclick="goHistory()">
+            View Order History
+        </button>
+
+        <button onclick="logoutUser()">
+            Logout
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+
+    © 2026 Merciya QuickWash Services
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.getElementById("profileName").innerHTML =
+localStorage.getItem("customerName") || "Guest User";
+
+document.getElementById("profileMobile").innerHTML =
+localStorage.getItem("mobile") || "-";
+
+document.getElementById("profileOrderId").innerHTML =
+localStorage.getItem("orderId") || "-";
+
+document.getElementById("profileService").innerHTML =
+localStorage.getItem("serviceName") || "-";
+
+document.getElementById("profilePayment").innerHTML =
+localStorage.getItem("paymentStatus") || "Pending";
+
+</script>
+
+</body>
+</html>
